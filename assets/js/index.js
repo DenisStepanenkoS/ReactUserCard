@@ -38,8 +38,12 @@ function App(){
 function UserCard(props){
     const [isFollowing, setIsFollowing] = useState(false);
     
-    const femaleStyle = {background: 'linear-gradient(rgb(255, 135, 135),rgb(241, 61, 61) ,rgb(153, 11, 11))'};
-    const maleStyle = {background: 'linear-gradient(rgb(143, 135, 255),rgb(73, 61, 241) ,rgb(32, 11, 153))'};
+    const femaleStyle = 
+    {background: 'linear-gradient(rgb(255, 135, 135),rgb(241, 61, 61) ,rgb(153, 11, 11))',
+     boxShadow: '0px 5px 15px rgb(255, 0, 76)'};
+    const maleStyle = 
+    {background: 'linear-gradient(rgb(143, 135, 255),rgb(73, 61, 241) ,rgb(32, 11, 153))',
+     boxShadow: '0px 5px 15px rgb(25, 0, 255)'};
     const {user} = props;
     const backgroundStyle = {
         backgroundImage: `url(${user.imgScr})`
